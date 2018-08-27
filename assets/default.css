@@ -1,0 +1,62 @@
+body {
+  background: url(greenhouse.png) no-repeat center center fixed;
+  background-size: cover;
+  color: #333333;
+  min-height: 100%;
+}
+
+#landing .jumbotron {
+  background: none;
+}
+
+#landing .jumbotron > .container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#landing .jumbotron.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+#landing h1, #landing h2, #landing h3, #landing h4 {
+  font-family: Lato;
+  font-style: normal;
+  text-align: center;
+}
+
+#landing h1 {
+  font-size: 120px;
+  font-weight: 300;
+}
+
+#landing h3 {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#landing h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 414px) {
+  #landing h1 {
+    font-size: 64px
+  }
+
+  #landing h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  #landing h4 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
