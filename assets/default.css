@@ -1,62 +1,170 @@
+a {
+  color: #888888;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 body {
-  background: url(greenhouse.png) no-repeat center center fixed;
-  background-size: cover;
-  color: #333333;
-  min-height: 100%;
+  background-color: #f6f6f6;
+  font-family: proxima-nova, sans-serif;
+  font-size: 18px;
 }
 
-#landing .jumbotron {
-  background: none;
+body > .container {
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 100px;
 }
 
-#landing .jumbotron > .container {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-#landing .jumbotron.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
-}
-
-#landing h1, #landing h2, #landing h3, #landing h4 {
-  font-family: Lato;
-  font-style: normal;
+body > .container .title {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
-#landing h1 {
-  font-size: 120px;
-  font-weight: 300;
+body > .container .title a {
+  color: #333333;
+  font-family: garamond-premier-pro-display, serif;
+  font-size: 60px;
 }
 
-#landing h3 {
-  font-size: 32px;
-  font-weight: 500;
+body > .container .title a:hover {
+  text-decoration: none;
+}
+
+body > .container nav {
+  clear: both;
+  height: 50px;
+}
+
+body > .container nav ul {
+
+}
+
+body > .container nav ul li {
+  background-color: #ffffff;
+}
+
+body > .container nav ul li:first-child a {
+  margin-left: 2rem;
+}
+
+body > .container nav ul li:last-child a {
+  margin-right: 2rem;
+}
+
+body > .container nav ul li a {
+  border-bottom: 1px solid #ffffff;
+  color: #888888;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  margin: 0 .75rem;
+  padding: .25rem 0.25rem;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-#landing h4 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 24px;
+body > .container nav ul li a.active {
+  border-bottom: 2px solid #eeeeee;
+  color: #333333;
+}
+
+body > .container nav div {
+  border-top: 2px solid #eeeeee;
+  margin-top: -15px;
+}
+
+body > .container .photo {
+  margin: 2rem 0;
+}
+
+body > .container .list-group {
+
+}
+
+body > .container .list-group .list-group-item {
+  border-color: #eeeeee;
+  font-size: 18px;
+}
+
+body > .container .list-group .list-group-item span {
+
+}
+
+body > .container .list-group .list-group-item span img {
+  height: 28px;
+  line-height: 18px;
+  margin-right: 10px;
+  vertical-align: bottom;
+  width: 28px;
+}
+
+body > .container .list-group .list-group-item span img.icon-welcome {
+  margin-bottom: 3px;
+}
+
+body > .container .list-group .list-group-item span i {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+body > .container h3 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+body > .container #travel-details .row {
+  margin-top: 45px;
+}
+
+body > .container .table tr td:first-child {
+  width: 32px;
+}
+
+body > .container .table tr td:last-child {
+
+}
+
+body > .container .table tr td a.link {
+  color: #333333;
+  font-size: 16px;
+  display: block;
+  margin-bottom: .25rem;
+  width: 118px;
+}
+
+body > .container .table tr td address {
+  margin-bottom: .5rem;
+}
+
+body > .container .table tr td img {
+  height: 32px;
+  width: 32px;
+}
+
+body .icons {
+  font-size: 12px;
+  text-align: center;
+}
+
+body .icons a {
+  color: #d6d6d6;
 }
 
 @media (max-width: 414px) {
-  #landing h1 {
-    font-size: 58px
+  body > .container {
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 20px;
   }
 
-  #landing h3 {
-    font-size: 24px;
-    font-weight: 400;
-  }
-
-  #landing h4 {
-    font-size: 18px;
-    font-weight: 400;
+  body > .container #travel-details .row + .row {
+    margin-top: 0;
   }
 }
