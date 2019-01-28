@@ -190,12 +190,47 @@ body .icons a {
   color: #d6d6d6;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   body > .container {
     border: 0;
     margin-bottom: 0;
     margin-top: 0;
     padding: 20px;
+  }
+
+  body > .container .title {
+    margin-bottom: .5rem;
+  }
+
+  body > .container nav {
+    border-bottom: 2px solid #eeeeee;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  body > .container nav .nav {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  body > .container nav .nav li {
+    text-align: center;
+  }
+
+  body > .container nav .nav li a {
+    border-bottom: 0;
+    color: #bbbbbb;
+    display: inline-block;
+    margin: 0 2rem;
+  }
+
+  body > .container nav .nav li .active {
+    border-bottom: 0;
+  }
+
+  body > .container nav div {
+    display: none;
+    margin-top: -15px;
   }
 
   body > .container .detail-wrapper .row + .row {
